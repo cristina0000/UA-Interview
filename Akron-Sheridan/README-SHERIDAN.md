@@ -4,7 +4,7 @@
 
 The materials (including SQL queries, Tableau dashboard, Python script) are at the link below:
 
-https://github.com/cristina0000/UA-Interview/Akron-Sheridan 
+https://github.com/cristina0000/UA-Interview/tree/main/Akron-Sheridan
 
 ## Useful Links
 
@@ -17,13 +17,13 @@ This Tableau dashboard is a story containing two dashboards, accessible through 
 
 ### Link to my most recent DEMO Enrollment project solution on my github account:
 
-https://github.com/cristina0000/UA-Interview/Akron-Sheridan
+https://github.com/cristina0000/UA-Interview/tree/main/Akron-Sheridan
 
 ### My personal github account links
 I would like to share with you a few additional links for your reference, if/when you have time:
 https://github.com/cristina0000/2025_git_projects/ - contains a few practice/learning projects, and there is a sample **PowerBI** dashboard here
 https://github.com/cristina0000/About-me - contains some of the certificates that I acquired in the last 5 years
-https://github.com/cristina0000/UA-Interview/Akron-Sheridan - DEMO enrollment project
+https://github.com/cristina0000/UA-Interview/tree/main/Akron-Sheridan - DEMO enrollment project
 
 https://github.com/cristina0000/p13_py_psm - contains a Propensity Score Matching (PSM) project using Python libraries
 
