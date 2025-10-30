@@ -15,7 +15,7 @@ https://public.tableau.com/app/profile/c.sheridan/viz/IRUniversityInsightsDEMO-s
 
 This Tableau dashboard is a story containing two dashboards, accessible through the arrows near the top center.
 
-### Link to my most recent project solution on my github account:
+### Link to my most recent DEMO Enrollment project solution on my github account:
 
 https://github.com/cristina0000/UA-Interview/Akron-Sheridan
 
@@ -24,6 +24,7 @@ I would like to share with you a few additional links for your reference, if/whe
 https://github.com/cristina0000/2025_git_projects/ - contains a few practice/learning projects, and there is a sample **PowerBI** dashboard here
 https://github.com/cristina0000/About-me - contains some of the certificates that I acquired in the last 5 years
 https://github.com/cristina0000/UA-Interview/Akron-Sheridan - DEMO enrollment project
+
 https://github.com/cristina0000/p13_py_psm - contains a Propensity Score Matching (PSM) project using Python libraries
 
 ### My Tableau Public Dashboards Link:
