@@ -4,7 +4,7 @@
 
 The materials (including SQL queries, Tableau dashboard, Python script) are at the link below:
 
-https://github.com/cristina0000/Akron-Sheridan 
+https://github.com/cristina0000/UA-Interview/Akron-Sheridan 
 
 ## Useful Links
 
@@ -17,14 +17,14 @@ This Tableau dashboard is a story containing two dashboards, accessible through 
 
 ### Link to my most recent project solution on my github account:
 
-https://github.com/cristina0000/Akron-Sheridan
+https://github.com/cristina0000/UA-Interview/Akron-Sheridan
 
 ### My personal github account links
 I would like to share with you a few additional links for your reference, if/when you have time:
 https://github.com/cristina0000/2025_git_projects/ - contains a few practice/learning projects, and there is a sample **PowerBI** dashboard here
 https://github.com/cristina0000/About-me - contains some of the certificates that I acquired in the last 5 years
-https://github.com/cristina0000/Akron-Sheridan - DEMO enrollment project
-https://github.com/cristina0000/p13_py_psm - contains a Propensity Score Matching project using Python libraries
+https://github.com/cristina0000/UA-Interview/Akron-Sheridan - DEMO enrollment project
+https://github.com/cristina0000/p13_py_psm - contains a Propensity Score Matching (PSM) project using Python libraries
 
 ### My Tableau Public Dashboards Link:
 
@@ -45,7 +45,6 @@ In DBeaver, I created two main SQL queries - please see CSU-SQL-Short.sql:
 2.  One SQL query for determining Retention rates
 
 In Tableau Public, I imported the Joined data CSV file CSU-JOINED-DATA.csv and created visualizations, and two dashboards, which I then combined into a story.
-https://public.tableau.com/app/profile/c.sheridan/viz/CSU-OHInsightsDEMO-syntheticdata/Story?publish=yes
 
 In Visual Studio Code, I used Python code to connect to the Oracle database, import the tables into a python dictionary of dataframes, transform/clean and then upload the clean tables back onto the database. Please see app_cs_short.py. I plan to further improve this code to do more.
 
@@ -56,7 +55,7 @@ In Visual Studio Code, I used Python code to connect to the Oracle database, imp
 4.  Improve the Tableau dashboard
 
 ## Challenges I encountered
-1.  Challenges with the setup, and thank you for your help. My main issue was attempting to run the SQL scripts from Windows Powershell, instead of DBeaver. 
+1.  Challenges with the setup. My main issue was attempting to run the SQL scripts from Windows Powershell, instead of a SQL editor like DBeaver. 
     I later found a free version of DBeaver which worked great.
 2.  Intrinsic challenges arising from the data being synthetic.
 3.  Connecting to the Oracle data base using Python was initially a challenge, as I would get errors related to cx_Oracle, however I found a better solution using oracledb instead
@@ -68,20 +67,17 @@ In the past, I used SQL in SSMS and SQL Developer and I connected to Banner or D
 
 ### Key Questions to Answer - I will update this section
 
-*   What key insights do you see in the data?
-*   How would you present this data to leadership?
+*   What key insights do I see in the data?
+*   How would I present this data to leadership/decision makers?
 I would present insights to the leadership using either a Tableau or PowerBI dashboard - please see Useful Links above for the Tableau dashboard.
 
 ## The Setup
 
-To begin, you'll need to set up a local Oracle database using Docker. Detailed instructions are available in the [**SETUP.md**](SETUP.md) file.
-
 The setup process involves:
 1.  Installing Docker Desktop.
 2.  Running an Oracle database container.
-3.  Initializing the database schema and loading the data using the provided SQL scripts (connected to database and ran the scripts in DBeaver Community Edition, which is free https://dbeaver.io/download/ ).
+3.  Initializing the database schema and loading the data using SQL scripts (connected to database and ran the scripts in DBeaver Community Edition, which is free https://dbeaver.io/download/ ).
 
-All the necessary data and setup scripts are included in this repository.
 
 ## The Data
 Main tables:
