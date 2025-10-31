@@ -8,7 +8,7 @@ username = 'SYSTEM'
 password = 'YourOraclePassword'
 host = 'localhost'
 port = 1521
-service_name = 'FREEPDB1' # database on Docker container
+service_name = 'FREEPDB1' # oracle database on Docker container
 
 # CREATE SQLAlchemy CONNECTION 
 engine = create_engine(f'oracle+oracledb://{username}:{password}@{host}:{port}/?service_name={service_name}')
@@ -51,27 +51,39 @@ if ps_stdnt_enrl_df is not None:
     print("\n📊 Enrollment Table Summary:")
     print(ps_stdnt_enrl_df.describe(include='all'))
 
-
 # DATA TRANSFORMATION 
-
+print ("Student Enrollment Transformation:")
 ps_stdnt_enrl_df.info()
 ps_stdnt_enrl_df = (
     ps_stdnt_enrl_df
     .drop(['crse_career', 'session_code'], axis=1)
     .drop_duplicates()
-    .rename(columns={'emplid': 'student_id'})
+    .rename(columns={'emplid': 'student_id', 'strm': 'term_id'})
 )
 ps_stdnt_enrl_df['class_nbr'] = ps_class_tbl_df['class_nbr'].astype(str)
 ps_stdnt_enrl_df.info()
 
+print ("Class table transformation")
 ps_class_tbl_df=ps_class_tbl_df.drop_duplicates()
+ps_class_tbl_df=ps_class_tbl_df.rename(columns={'strm': 'term_id', 'descr': 'class_descr'})
 ps_class_tbl_df['class_nbr'] = ps_class_tbl_df['class_nbr'].astype(str)
 ps_class_tbl_df.info()
+
+print ("Term table Transformation:")
+ps_term_tbl_df.info()
+ps_term_tbl_df = (
+    ps_term_tbl_df
+    .drop(['institution', 'acad_career'], axis=1)
+    .drop_duplicates()
+    .rename(columns={'strm': 'term_id', 'descr': 'term_descr'})
+)
+ps_term_tbl_df.info()
 
 # WRITE DATA BACK TO THE DATABASE
 
 ps_stdnt_enrl_df.to_sql('PS_STDNT_ENRL_CLEAN', con=engine, if_exists='replace', index=False, schema='SYSADM')
 ps_class_tbl_df.to_sql('PS_CLASS_TBL_CLEAN', con=engine, if_exists='replace', index=False, schema='SYSADM')
+ps_term_tbl_df.to_sql('PS_TERM_TBL_CLEAN', con=engine, if_exists='replace', index=False, schema='SYSADM')
 print('✅ Data was loaded back to the database successfully')
 
 
